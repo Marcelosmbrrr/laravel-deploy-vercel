@@ -48,6 +48,17 @@ require __DIR__ . "/../public/index.php";
 }
 ```
 
+### No arquivo app/Providers/AppServiceProvider.php, faça:
+
+```
+public function boot(): void
+{
+    if (app()->environment('production')) {
+        URL::forceScheme('https');
+    }
+}
+```
+
 ### Vercel - Configurações do projeto:
 
 - Alterar "Output Directory" para "public", sem aspas;
