@@ -19,12 +19,6 @@ require __DIR__ . "/../public/index.php";
 ```
 {
     "version": 2,
-    "builds": [
-        {
-            "src": "api/index.php",
-            "use": "@vercel/php"
-        }
-    ],
     "framework": null,
     "functions": {
         "api/index.php": {
