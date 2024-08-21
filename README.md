@@ -64,19 +64,6 @@ public function boot(): void
 - Para evitar bugs, pode ser necessário alterar a versão do NodeJS para 18, que por padrão é a 20.
 - Se o nome do domínio for alterado, na seção "Domains", será necessário fazer o mesmo no atributo APP_URL do arquivo vercel.json.
 
-### Supabase - Banco de Dados:
-
-- Criar um banco de dados;
-- Ir em "Project Settings" e copiar os dados do formulário "Connection parameters".
-
-```
-DB_CONNECTION=pgsql
-DB_HOST=
-DB_PORT=6543
-DB_DATABASE=
-DB_USERNAME=
-DB_PASSWORD=
-```
 <!--
 ### Supabase - Storage:
 
